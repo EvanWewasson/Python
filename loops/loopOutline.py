@@ -32,7 +32,7 @@ for x in var:
 #4) Make a string list with three items inside: "Michael", "Chris", "Nino". 
 #Make a for loop that prints out all the items. Add an if statement that 
 #breaks the loop if the item equals "Chris".
-list = str("Micheal", "Chris", "Nino")
+list = ["Micheal", "Chris", "Nino"]
 for x in list:
     print(x)
     
