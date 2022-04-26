@@ -7,7 +7,7 @@ EXAMPLE TASK:
 '''
 #EX) Define a function that has two parameters. Make the function add the two
 #numbers together and return the result.
-from pickle import TRUE
+
 def add_two_numbers(num1, num2):
     sumOfTwoNumbers = num1 + num2
     return sumOfTwoNumbers
@@ -68,38 +68,84 @@ print(check(x, y))
 #If they are the same, it should just return either parameter. Now call the 
 #function.
 #Print what the function returns.
-def big(numbOne, numbTwo):
+def numberTwo(x, y):
+    if x > y:
+        return x 
+    elif y > x:
+        return y
+    else:
+        return x
     
+x = 6
+y = 9
+
+print(numberTwo(x,y))
 
 
 #5) Define a function that has two string parameters. Make the function
 #add the two strings together. And then return the combined string. Now call 
 #the function.
 #Print what the function returns.
+def string(a, b):
+    x = str(a) + str(b)
+    return x 
 
+a = "Moon"
+b = "veil"
+
+print(string(a, b))
+    
 
 
 #6) Define a function that has three int parameters. If the first number is 
 #equal to the second OR the third number, return true. Else, return false. Now 
 #call the function.
 #Print what the function returns.
+def three(a, b, c):
+    t = True
+    f = False
+    if (a == b) or (a == c):
+        return t
+    else:
+        return f
 
-
-
+a = 4
+b = 4
+c= 5
+print(three(a, b, c))
 #7) Define a function that prints your name. It should have no parameters and 
 #shouldn't return anything. Now call the function.
+def name(ev):
+     
 
-
-
+    ev = "Evan"
 #8) Define a function that has one string parameter. The string should be a
 #color. If that string is equal to your favorite color, it prints "That's my 
 #favorite color!". If it is not, it prints "That is not my favorite color. 
 #Try again.". It shouldn't return anything. Now call the function.
-
+def string(c):
+    p = str("Silver")
+    if (c == p):
+        print("That's my favorite color!")
+    else:
+        print("That is not my favorite color. Try again.")
+w = "purple"    
+string(w)
 
 
 #9) Define a function that has one int parameter. The int should be 
 #positive. If the number is not equal to zero, the function runs a loop that
 #decrements the parameter by 1 and prints it each time. Now call the function.
+def number(num):
+    while (num > 0) or (num < 0):
+        print(num)
+        if (num == 0):
+            break
+        num -= 1
 
+
+num = 3
+print(number(num))  
+
+    
 
