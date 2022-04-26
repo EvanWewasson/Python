@@ -7,6 +7,7 @@ EXAMPLE TASK:
 '''
 #EX) Define a function that has two parameters. Make the function add the two
 #numbers together and return the result.
+from pickle import TRUE
 def add_two_numbers(num1, num2):
     sumOfTwoNumbers = num1 + num2
     return sumOfTwoNumbers
@@ -24,29 +25,51 @@ START HERE
 #the first parameter minus the second one. Then, return the result. Now call 
 #the function.
 #Print what the function returns.
+def subtract(numOne, numTwo):
+    answer = numOne - numTwo
+    return answer
 
-
-
+a = 9 
+b = 2
+subtract(a, b)
+difference = subtract(a, b)
+print(subtract(a, b))
 #2) Define a function that has one parameter. Make the function divide the 
 #parameter by 2, multiply it by 77, and then add 10,000. Return the result.
 #Now call the function.
 #Print what the function returns.
+def math(one):
+    answer = (one / 2) * 77 + 10000
+    return answer
 
-
-
+e = 6
+math(e)
+equal = math(e)
+print(math(e))
 #3) Define a function that has two int parameters. Make the function check if 
 #two numbers are equal. If they are equal, return true. If they are not equal, 
 #return false. Now call the function.
 #Print what the function returns.
+def check(numberOne, numberTwo):
+    t = True 
+    f = False
+    if numberOne == numberTwo:
+        return t
+    else:
+        return f
 
-
-
+x = 4
+y = 4
+check(x, y)
+checking = check(x, y)
+print(check(x, y))
 #4) Define a function that has two int parameters. Make the function
 #check which parameter is bigger, and return the bigger parameter. 
 #If they are the same, it should just return either parameter. Now call the 
 #function.
 #Print what the function returns.
-
+def big(numbOne, numbTwo):
+    
 
 
 #5) Define a function that has two string parameters. Make the function
